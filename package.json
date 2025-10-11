@@ -1,6 +1,6 @@
 {
   "name": "create-buntron-app",
-  "version": "0.1.0",
+  "version": "1.0.2",
   "description": "Create buntron (Next.js + Electron) apps in one command",
   "author": "kubashh",
   "license": "MIT",
@@ -14,20 +14,18 @@
     "kubashh"
   ],
   "files": [
-    "index.ts"
+    "index.ts",
+    "templates"
   ],
-  "bin": {
-    "create-buntron-app": "index.ts"
-  },
+  "bin": "./index.ts",
   "scripts": {
     "dev": "bun update && clear && bun dev.ts"
   },
-  "dependencies": {
-    "@octokit/rest": "20.1.0",
-    "got": "11.8.6",
-    "tar": "7.0.0"
-  },
   "devDependencies": {
     "@types/bun": "latest"
+  },
+  "prettier": {
+    "semi": false,
+    "printWidth": 108
   }
 }

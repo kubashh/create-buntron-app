@@ -1,0 +1,27 @@
+{
+  "name": "my-app",
+  "version": "0.0.1",
+  "main": "app/background.js",
+  "scripts": {
+    "dev": "nextron",
+    "build": "nextron build",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "electron-serve": "^3.0.0",
+    "electron-store": "^11.0.2"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "latest",
+    "electron": "^37.6.1",
+    "electron-builder": "26.0.12",
+    "next": "^14.2.33",
+    "nextron": "^9.5.0",
+    "postcss": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "@tailwindcss/postcss": "latest",
+    "tailwindcss": "latest"
+  }
+}
