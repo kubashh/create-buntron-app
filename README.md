@@ -3,13 +3,8 @@
 ## Usage
 
 ```bash
-bun create buntron-app@latest [path]
-bun create buntron-app@latest my-app
+bun create buntron-app@latest [path] # "." for current directory
 ```
-
-## Examples
-
-https://github.com/kubashh/buntron/tree/main/examples
 
 ## Related
 
