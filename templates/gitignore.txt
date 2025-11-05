@@ -1,4 +1,0 @@
-node_modules
-dist
-app
-renderer/next-env.d.ts

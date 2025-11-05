@@ -1,0 +1,34 @@
+{
+  "name": "myapp",
+  "version": "0.0.1",
+  "main": "core/main.ts",
+  "scripts": {
+    "lightbuild": "tsc -p core",
+    "dev": "bun lightbuild && bun dev.ts",
+    "build": "NODE_ENV=production bun lightbuild && wdwh build && electron-builder",
+    "testbuild": "bun run build && ./dist/linux-unpacked/myapp",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "build": {
+    "appId": "com.example.myapp",
+    "productName": "MyApp",
+    "files": "**/*",
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "dependencies": {
+    "wdwh": "latest",
+    "buntron": "latest"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "execa": "^9.6.0",
+    "electron": "38.1.0",
+    "electron-builder": "^26.0.12",
+    "typescript": "latest"
+  }
+}
