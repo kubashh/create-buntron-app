@@ -25,7 +25,6 @@ function createBuntronApp() {
 
   cpSync(examplePath, outPath, { recursive: true, force: true })
   renameSync(`${outPath}/gitignore.txt`, `${outPath}/.gitignore`)
-  renameSync(`${outPath}/bunfig.txt`, `${outPath}/bunfig.toml`)
 
   console.log(`Done.`)
   console.log(`To start run "bun i && bun dev"`)

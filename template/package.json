@@ -18,7 +18,6 @@
     }
   },
   "dependencies": {
-    "wdwh": "latest",
     "buntron": "latest"
   },
   "devDependencies": {
@@ -26,9 +25,10 @@
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "typescript": "latest",
+    "wdwh": "latest",
     "execa": "^9.6.0",
     "electron": "38.1.0",
-    "electron-builder": "^26.0.12",
-    "typescript": "latest"
+    "electron-builder": "^26.0.12"
   }
 }

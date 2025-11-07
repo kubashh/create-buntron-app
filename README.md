@@ -8,4 +8,4 @@ bun create buntron-app@latest [path] # "." for current directory
 
 ## Related
 
-[Buntron](https://github.com/kubashh/buntron) - Electron + Bun
+[Buntron](https://www.npmjs.com/package/buntron) - Electron + Bun
