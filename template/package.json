@@ -24,7 +24,6 @@
     "wdwh": "latest",
     "buntron": "latest",
     "electron-builder": "^26.0.12",
-    "electron": "38.1.0",
-    "execa": "^9.6.0"
+    "electron": "38.1.2"
   }
 }

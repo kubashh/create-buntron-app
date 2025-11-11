@@ -1,6 +1,6 @@
 {
   "name": "create-buntron-app",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "Create buntron (Bun + Electron) apps in one command",
   "author": "kubashh",
   "license": "MIT",
