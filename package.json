@@ -1,6 +1,6 @@
 {
   "name": "create-buntron-app",
-  "version": "1.2.1",
+  "version": "1.3.1",
   "description": "Create buntron (Bun + Electron) apps in one command",
   "author": "kubashh",
   "license": "MIT",
@@ -21,8 +21,8 @@
   ],
   "bin": "./dist.ts",
   "scripts": {
-    "dev": "clear && bun dev.ts && cd workspace && bun i && bun dev",
-    "deploy": "bun deploy.ts"
+    "dev": "clear && bun src/dev.ts && cd workspace && bun i && bun dev",
+    "deploy": "bun src/deploy.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
