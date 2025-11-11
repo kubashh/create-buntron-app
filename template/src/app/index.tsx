@@ -3,7 +3,7 @@
 import App from "./App"
 
 export const config: Config = {
-  outdir: `./app`,
+  outdir: `./dist`,
   bundleCss: true,
 }
 
