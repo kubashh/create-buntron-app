@@ -6,18 +6,24 @@
   "scripts": {
     "dev": "buntron",
     "build": "buntron build",
-    "testbuild": "buntron build && ./dist/linux-unpacked/myapp",
     "postinstall": "electron-builder install-app-deps"
   },
   "buntron": {
     "targets": [
       "linux-x64",
       "win-x64"
-    ]
+    ],
+    "core": {
+      "devTools": "right",
+      "quitCtrlQ": "dev",
+      "quitCtrlW": "dev",
+      "width": 900,
+      "height": 700
+    }
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "@types/node": "latest",
+    "@types/node": "22.19.0",
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "typescript": "latest",
