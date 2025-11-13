@@ -10,7 +10,6 @@ create-buntron-app
 USAGE:
 
   create-buntron-app my-app           # create app in 'my-app' directory
-  create-buntron-app -h               # print help and exit
 `)
   process.exit(0)
 }

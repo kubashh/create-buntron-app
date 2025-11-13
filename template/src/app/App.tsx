@@ -1,19 +1,20 @@
 import { useState } from "react"
-// import fs from "../lib/fs"
-// import require from "../lib/require"
+import { fs } from "../lib/require"
 
 export default function App() {
-  const [user] = useState<null>(null)
+  const [user, setUser] = useState<string | null>(null)
 
   console.log(process)
-  // console.log(fs.readFileSync(`./package.json`))
+  const packageJsonTest = String(fs.readFileSync(`./package.json`))
+  if (!user) setUser(packageJsonTest)
   // fs.writeFileSync(`test.txt`, `testfile\n`)
 
   return (
     <>
       <main>
         <h1>Hello</h1>
-        {user}
+        <h2>package.json</h2>
+        <div className="mb-4">{user}</div>
         <button onClick={() => console.log(`Hello!`)}>Click me!</button>
       </main>
     </>
