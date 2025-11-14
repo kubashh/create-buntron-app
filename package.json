@@ -1,6 +1,6 @@
 {
   "name": "create-buntron-app",
-  "version": "1.3.5",
+  "version": "1.4.0",
   "author": "kubashh",
   "description": "Create buntron (Bun + Electron) apps in one command",
   "repository": "https://github.com/kubashh/create-buntron-app",
@@ -13,10 +13,10 @@
     "@types/bun": "latest"
   },
   "files": [
-    "dist.ts",
+    "main.js",
     "template"
   ],
-  "bin": "./dist.ts",
+  "bin": "./main.js",
   "keywords": [
     "electron",
     "react",

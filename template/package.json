@@ -9,10 +9,16 @@
     "postinstall": "electron-builder install-app-deps"
   },
   "buntron": {
-    "targets": [
-      "linux-x64",
-      "win-x64"
-    ],
+    "targets": {
+      "linux": [
+        "x64"
+      ],
+      "mac": [],
+      "win": [
+        "x64",
+        "ia32"
+      ]
+    },
     "core": {
       "devTools": "right",
       "quitCtrlQ": "dev",
@@ -22,7 +28,6 @@
     }
   },
   "devDependencies": {
-    "@types/bun": "latest",
     "@types/node": "22.19.0",
     "@types/react": "latest",
     "@types/react-dom": "latest",
