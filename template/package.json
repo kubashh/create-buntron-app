@@ -34,6 +34,7 @@
     "@types/node": "22.19.0",
     "@types/react": "latest",
     "typescript": "latest",
-    "buntron": "latest"
+    "buntron": "latest",
+    "wdwh": "latest"
   }
 }
