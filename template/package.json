@@ -9,6 +9,8 @@
     "postinstall": "electron-builder install-app-deps"
   },
   "buntron": {
+    "name": "myapp",
+    "appId": "com.nick.myapp",
     "targets": {
       "linux": [
         "x64"
@@ -17,7 +19,8 @@
       "win": [
         "x64",
         "ia32"
-      ]
+      ],
+      "web": true
     },
     "core": {
       "devTools": "right",
@@ -30,11 +33,7 @@
   "devDependencies": {
     "@types/node": "22.19.0",
     "@types/react": "latest",
-    "@types/react-dom": "latest",
     "typescript": "latest",
-    "wdwh": "latest",
-    "buntron": "latest",
-    "electron-builder": "^26.0.12",
-    "electron": "38.1.2"
+    "buntron": "latest"
   }
 }

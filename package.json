@@ -1,6 +1,6 @@
 {
   "name": "create-buntron-app",
-  "version": "1.4.0",
+  "version": "1.4.2",
   "author": "kubashh",
   "description": "Create buntron (Bun + Electron) apps in one command",
   "repository": "https://github.com/kubashh/create-buntron-app",
