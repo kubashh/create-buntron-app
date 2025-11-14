@@ -5,9 +5,13 @@ export default function App() {
   const [user, setUser] = useState<string | null>(null)
 
   console.log(process)
-  const packageJsonTest = String(fs.readFileSync(`./package.json`))
-  if (!user) setUser(packageJsonTest)
-  // fs.writeFileSync(`test.txt`, `testfile\n`)
+  try {
+    const packageJsonTest = String(fs.readFileSync(`./package.json`))
+    if (!user) setUser(packageJsonTest)
+    // fs.writeFileSync(`test.txt`, `testfile\n`)
+  } catch (e) {
+    console.error(e)
+  }
 
   return (
     <>
