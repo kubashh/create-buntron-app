@@ -9,7 +9,7 @@ create-buntron-app
 
 USAGE:
 
-  create-buntron-app my-app           # create app in 'my-app' directory
+  create-buntron-app my-app       # create app in 'my-app' directory
 `)
   process.exit(0)
 }
@@ -20,11 +20,8 @@ function createBuntronApp() {
   const examplePath = `${import.meta.dirname}/template`
   const outPath = path.join(process.cwd(), process.argv[2])
 
-  console.log(`Copying files...`)
-
   cpSync(examplePath, outPath, { recursive: true, force: true })
   renameSync(`${outPath}/gitignore.txt`, `${outPath}/.gitignore`)
 
-  console.log(`Done.`)
-  console.log(`To start run "bun i && bun dev"`)
+  console.log(`Done. To start run "bun i && bun dev"`)
 }
